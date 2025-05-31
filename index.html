@@ -11,6 +11,7 @@
        <div class="form-container">
 
         <h2>Employee Registration Form</h2>
+        <h4>please fill out the required information</h4>
         <form action="#" method="post">
 
             <!--Required to restrict submission until filled-->
@@ -44,12 +45,11 @@
            <input type ="text" id="Department" name="Department" required>
 
             <!--Employee type Input-->
-            <label for="Email">Type of Job*</label>
-            <Select id="job" name="JobType" required>
-                <option value="">-SELECT-</option>
-                <option value="Full Time">Full Time</option>
-                <option value="Part Time">Part Time</option>
-                <option value="Contract">Contract</option>
+            <label for="Email">Applied Position*</label>
+            <input type="text" id="job title" name="Jobtitle" required>
+
+            <label for="hireDate">Earliest Possible Hire Date:</label>
+            <input type="date" id="hireDate" name="hireDate" required>
 
             <!--Emergency Contacts name-->
             <label for="emergencyName">Emergency Contact Name:</label>
@@ -59,12 +59,15 @@
             <label for="emergencyPhone">Emergency Contact Phone:</label>
             <input type="tel" id="emergencyPhone" name="emergencyPhone">
 
+            <!--Letter-->
+            <label for="Cover Letter">Cover Letter</label>
+            <input type="text" id="Letter" name="CoverLetter">
+
             <!--Resume Upload-->
-            <label for="Resume">Resume</label>
+            <label for="Resume">Resume:</label>
             <input type="file" id="resume" name="resume">
             <button type="submit">Register</button>
         </form>
-
 
        </div>
 
